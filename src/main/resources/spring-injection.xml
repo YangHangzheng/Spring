@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <!--<bean id="injectionService" class="com.yanghangzheng.ioc.injection.service.InjectionServiceImpl">-->
+        <!--<property name="injectionDAO" ref="injectionDAO"></property>-->
+    <!--</bean>-->
+    <!--<bean id="injectionDAO" class="com.yanghangzheng.ioc.injection.dao.InjectionDAOImpl"></bean>-->
+
+    <bean id="injectionService" class="com.yanghangzheng.ioc.injection.service.InjectionServiceImpl">
+        <constructor-arg name="injectionDAO" ref="injectionDAO"></constructor-arg>
+    </bean>
+    <bean id="injectionDAO" class="com.yanghangzheng.ioc.injection.dao.InjectionDAOImpl"></bean>
+
+
+</beans>
