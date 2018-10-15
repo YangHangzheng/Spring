@@ -1,5 +1,6 @@
 package com.yanghangzheng.test.bean;
 
+import com.yanghangzheng.bean.BeanScope;
 import com.yanghangzheng.test.base.UnitTestBase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +15,7 @@ public class TestBeanScope extends UnitTestBase {
 
     @Test
     public void testSay() {
-        
+        BeanScope beanScope = super.getBean("beanScope");
+        beanScope.say();
     }
 }

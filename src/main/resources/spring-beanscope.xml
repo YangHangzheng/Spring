@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-init-method="init" default-destroy-method="destroy">
 
-    <bean id="beanScope" class="com.yanghangzheng.bean.BeanScope"></bean>
+    <bean id="beanScope" class="com.yanghangzheng.bean.BeanScope" scope="singleton"></bean>
 
 </beans>
